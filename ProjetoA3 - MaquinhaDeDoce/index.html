@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Máquina de Doces Realista</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="vending-machine">
+        <div class="machine-header">
+            <h1>Maquina de Doces</h1>
+        </div>
+        <div class="machine-display">
+            <div class="screen">
+                <span class="message">Insira o Dinheiro!</span>
+                <span class="balance">Saldo: R$0,00</span>
+            </div>
+        </div>
+        <div class="vitrine">
+            <div class="shelf" data-candy="A">
+                <span class="label">Doce A (R$6)</span>
+                <div class="candy-slot" data-candy="A"></div>
+                <div class="candy-slot" data-candy="A"></div>
+                <div class="candy-slot" data-candy="A"></div>
+                <div class="candy-slot" data-candy="A"></div>
+                <div class="candy-slot" data-candy="A"></div>
+                <div class="candy-slot" data-candy="A"></div>
+            </div>
+            <div class="shelf" data-candy="B">
+                <span class="label">Doce B (R$7)</span>
+                <div class="candy-slot" data-candy="B"></div>
+                <div class="candy-slot" data-candy="B"></div>
+                <div class="candy-slot" data-candy="B"></div>
+                <div class="candy-slot" data-candy="B"></div>
+                <div class="candy-slot" data-candy="B"></div>
+                <div class="candy-slot" data-candy="B"></div>
+            </div>
+            <div class="shelf" data-candy="C">
+                <span class="label">Doce C (R$8)</span>
+                <div class="candy-slot" data-candy="C"></div>
+                <div class="candy-slot" data-candy="C"></div>
+                <div class="candy-slot" data-candy="C"></div>
+                <div class="candy-slot" data-candy="C"></div>
+                <div class="candy-slot" data-candy="C"></div>
+                <div class="candy-slot" data-candy="C"></div>
+                
+            </div>
+        </div>
+        <div class="control-panel">
+            <div class="money-slot">
+                <div class="slot-hole"></div>
+                <button data-value="1">R$1</button>
+                <button data-value="2">R$2</button>
+                <button data-value="5">R$5</button>
+            </div>
+            <div class="change-return">
+                <button class="change-btn">Resgate seu Troco</button>
+            </div>
+            <div class="candy-buttons">
+                <button class="candy-btn" data-candy="A" disabled>Doce A</button>
+                <button class="candy-btn" data-candy="B" disabled>Doce B</button>
+                <button class="candy-btn" data-candy="C" disabled>Doce C</button>
+            </div>
+        </div>
+        <div class="output-tray">
+            <div class="tray"></div>
+            <div class="push-label">PUSH</div>
+        </div>
+        <div class="history">
+            <h3>Compras:</h3>
+            <ul class="history-list"></ul>
+        </div>
+    </div>
+    <script type="module" src="js/automaton.js"></script>
+    <script type="module" src="js/animation.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
